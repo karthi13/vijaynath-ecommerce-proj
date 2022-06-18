@@ -98,32 +98,45 @@ class Header extends Component {
     );
   }
 
+  cart() {
+    return (
+      <div
+        className="cart_container"
+        onClick={() => this.setState({ cartClicked: !this.state.cartClicked })}
+      >
+        <Cart color="black" />
+        { 
+          this.props.cart.length !== 0 && 
+          <div className="header_badge">
+            {this.props.cart.reduce((e, a) => e + a.amount, 0)}
+          </div>
+        }
+
+        { 
+          !this.state.cartClicked && 
+          <div>
+            <AllMiniCart />
+          </div>
+        }
+      </div>
+    );
+  }
+
   actions() {
     return (
       <div className="header_actions">
-        {this.currencyGroup()}
-        <div
-          className="cart_container"
-          onClick={(e) =>
-            this.setState({
-              cartClicked: this.state.cartClicked ? false : true,
-            })
-          }
-        >
-          <Cart color="black" />
-          {this.props.cart.length !== 0 && (
-            <div className="header_badge">
-              {this.props.cart.reduce((e, a) => e + a.amount, 0)}
-            </div>
-          )}
-
-          <div
-            style={{ display: !this.state.cartClicked ? "block" : "none" }}
-          >
-            <AllMiniCart />
-          </div>
-        </div>
+        { this.currencyGroup() }
+        { this.cart() }
     </div>
+    );
+  }
+
+  blur() {
+    return (
+        <div
+          onClick={() => this.setState({ cartClicked: !this.state.cartClicked })}
+          className="header_blur"
+        />
     );
   }
 
@@ -135,13 +148,7 @@ class Header extends Component {
           {this.logo()}
           {this.actions()}
         </header>
-        <div
-          onClick={() =>
-            this.setState({ cartClicked: !this.state.cartClicked })
-          }
-          className="header_blur"
-          style={{ display: !this.state.cartClicked ? "block" : "none" }}
-        ></div>
+        { !this.state.cartClicked &&  this.blur() }
       </>
     );
   }

@@ -1,11 +1,11 @@
 .all_mini {
-  width: 340px;
+  width: 325px;
   height: 720px;
   border: 1px solid #fff;
   position: absolute;
   margin-left: -22%;
-  top: 75px;
-
+  top: 59px;
+  right: -20px;
   background-color: #fff;
   overflow: scroll;
   z-index: 1000;
