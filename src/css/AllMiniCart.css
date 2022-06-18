@@ -1,0 +1,106 @@
+.all_mini {
+  width: 340px;
+  height: 720px;
+  border: 1px solid #fff;
+  position: absolute;
+  margin-left: -22%;
+  top: 75px;
+
+  background-color: #fff;
+  overflow: scroll;
+  z-index: 1000;
+  padding-left: 16px;
+  padding: 16px;
+}
+
+.all_mini_bag {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  margin-bottom: 30px;
+  text-align: left;
+  color: #1d1f22;
+  text-transform: capitalize;
+}
+
+.all_mini_view {
+  padding: 13px 32px;
+  text-align: center;
+  text-transform: uppercase;
+
+  width: 140px;
+  height: 43px;
+
+  background: #ffffff;
+  border: 2px solid #1d1f22;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  margin-right: 10px;
+  position: relative;
+  top: 2.2px;
+}
+
+.all_mini_checkout {
+  text-transform: uppercase;
+  padding: 13px 32px;
+
+  text-align: center;
+  width: 140px;
+  height: 43px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  line-height: 120%;
+  /* identical to box height, or 17px */
+  /* --c-primary */
+
+  background: #5ece7b;
+}
+
+.all_mini_total {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1d1f22;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.total_amt {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+
+  text-align: right;
+  color: #1d1f22;
+  margin-top: -5px;
+}
+
+@media (max-width: 979px) {
+  .all_mini {
+    left: 25%;
+  }
+}

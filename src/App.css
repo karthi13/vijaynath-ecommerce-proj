@@ -1,0 +1,20 @@
+@import "normalize";
+@import "./css/Header.css";
+@import "./css/AllProducts.css";
+@import "./css/Product.css";
+@import "./css/ProductDetails.css";
+@import "./css/Attributes.css";
+@import "./css/AllCart.css";
+@import "./css/Cart.css";
+@import "./css/MiniCartAttribute.css";
+@import "./css/MiniCart.css";
+@import "./css/AllMiniCart.css";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}

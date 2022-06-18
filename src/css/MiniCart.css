@@ -1,0 +1,74 @@
+.mini_cart {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.mini_name {
+  width: 136px;
+  height: 52px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #1d1f22;
+  text-transform: capitalize;
+}
+.mini_price {
+  width: 52px;
+  height: 26px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  text-align: right;
+  color: #1d1f22;
+}
+.mini_img {
+  width: 121px;
+  height: 190px;
+
+  margin-top: -50px;
+}
+.mini_plus {
+  height: 24px;
+  width: 24px;
+  border-radius: 0px;
+  border: 1px solid #1d1f22;
+  background-color: #fff;
+  font-size: 20px;
+  position: relative;
+  top: 6px;
+  left: -30px;
+}
+.mini_minus {
+  height: 24px;
+  width: 24px;
+  border-radius: 0px;
+  border: 1px solid #1d1f22;
+  background-color: #fff;
+  font-size: 20px;
+  position: relative;
+  top: -32px;
+  left: -30px;
+}
+.mini_total {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1d1f22;
+  position: relative;
+  top: 65px;
+  left: -30px;
+}
+.mini_sidebar {
+  margin-left: 60px;
+}

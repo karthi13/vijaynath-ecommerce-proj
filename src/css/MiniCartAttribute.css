@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+.mini_attributes_name {
+  width: auto;
+  height: 16px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1d1f22;
+  text-transform: capitalize;
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+.mini_attributes_color {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  color: transparent;
+  margin-top: 6px;
+}
+
+.mini_attributes_value {
+  display: inline-block;
+  width: auto;
+  height: 26px;
+  padding: 2px;
+
+  border: 1px solid #1d1f22;
+  margin-right: 10px;
+  margin-top: 7px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #1d1f22;
+}
+
+.click {
+  background-color: black;
+  color: aliceblue;
+}
+.color {
+  border: 2px solid #5ece7b;
+}

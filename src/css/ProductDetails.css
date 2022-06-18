@@ -1,0 +1,122 @@
+.details {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 10%;
+
+  margin-top: 5%;
+}
+img {
+  height: 511px;
+  width: 610px;
+  object-fit: contain;
+}
+
+.details_brand {
+  width: 292px;
+  height: 27px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  align-items: center;
+  color: #1d1f22;
+  margin-bottom: 10px;
+}
+.details_name {
+  width: 292px;
+  height: 27px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1d1f22;
+  margin-bottom: 30px;
+}
+
+.details_description {
+  margin-top: 30px;
+  width: 292px;
+  height: 103px;
+  left: calc(50% - 292px / 2 + 355px);
+  bottom: 178px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  word-spacing: 3px;
+
+  color: #1d1f22;
+}
+.details_price {
+  margin-top: 25px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d1f22;
+}
+.details_price_value {
+  width: 86px;
+  height: 46px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: #1d1f22;
+  margin-top: 8px;
+}
+.details_btn {
+  padding: 16px 32px;
+  width: 292px;
+  height: 52px;
+  background-color: #5ece7b;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+}
+.details_content {
+  width: 292px;
+  height: 595px;
+  margin-left: 40px;
+}
+
+.details_gallery_items {
+  width: 79px;
+  height: 80px;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .details_gallery_items {
+    display: inline;
+    margin-bottom: 50px;
+  }
+  .details_content {
+    margin-top: 80px;
+  }
+
+  img {
+    height: 411px;
+    width: 350px;
+    object-fit: contain;
+  }
+}

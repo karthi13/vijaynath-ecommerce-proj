@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+.attributes_name {
+  width: auto;
+  height: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d1f22;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+.attributes_color {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  color: transparent;
+}
+
+.attributes_value {
+  display: inline-block;
+  width: 63px;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #1d1f22;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #1d1f22;
+  text-align: center;
+}
+
+.click {
+  background-color: black;
+  color: aliceblue;
+}
+.color {
+  border: 2px solid #5ece7b;
+}

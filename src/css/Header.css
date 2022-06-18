@@ -1,0 +1,139 @@
+:root {
+  --logo-color: #5ece7b;
+  --font-color: #1d1f22;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+nav.header_category {
+  padding-top: 28px;
+}
+
+.header_category a {
+  text-decoration: none;
+  padding: 0 16px 32px;
+  color: var(--font-color);
+}
+
+.header_category a:hover {
+  color: var(--logo-color);
+  font-weight: 600;
+  border-bottom: 2px solid var(--logo-color);
+}
+
+a.header_logo {
+  padding-top: 24px;
+}
+
+.header_logo > .logo {
+  width: 41px;
+  height: 41px;
+}
+
+div.header_actions {
+  display: flex;
+  padding: 23px 0 17px;
+}
+
+.currency_group {
+  display: flex;
+  align-items: center;
+  padding: 5.5px 0;
+  margin-right: 22px;
+}
+
+.currency_symbol {
+  padding: 0 10px;
+  font-size: 18px;
+  line-height: 28.8px;
+}
+
+.arrow {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.cart_container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header_dialog {
+  position: absolute;
+  right: -45px;
+  width: 114px;
+  height: auto;
+  border: 1px solid #eee;
+  background-color: #fff;
+  margin-top: 20px;
+  text-align: center;
+  z-index: 1200;
+  box-shadow: 0px 5px 20px 3px rgba(168, 172, 176, 0.19);
+}
+
+.header_currency {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28.8px;
+  text-align: left;
+  color: #1d1f22;
+  background-color: white;
+  margin: 0;
+  padding: 10px 40px 10px 20px;
+}
+
+.header_currency:hover {
+  background-color: #eee;
+}
+
+
+
+
+.header_blur {
+  background: rgba(57, 55, 72, 0.22);
+  position: absolute;
+  top: 8%;
+  bottom: -120%;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: 100;
+}
+.header_badge {
+  height: 24px;
+  width: 24px;
+  padding: 2px;
+  border-radius: 100%;
+  background-color: #1d1f22;
+  position: relative;
+  top: -33px;
+  left: 17px;
+  color: #fff;
+  text-align: center;
+
+  padding-top: -2px;
+  padding-bottom: 22px;
+}
+
+@media (max-width: 1408px) {
+  .header {
+    justify-content: space-around;
+    margin-right: 10px;
+  }
+}
